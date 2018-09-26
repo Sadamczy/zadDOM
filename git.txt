@@ -1,0 +1,68 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{   int a,b;
+    cin>> a;
+    cin>> b;
+    cout<<a*a+b*b;   }
+____________________________________________________________________________
+#include <iostream>
+using namespace std;
+
+int main()
+{   int a,b;
+    cin>> a;
+    cin>> b;
+    cout<<(a+b)*(a+b);   }
+____________________________________________________________________________
+
+#include <iostream>
+using namespace std;
+
+int main()
+{   int a,b;
+    cin>> a;
+    cin>> b;
+    cout<<(a-b)*(a-b)*(a-b);   }
+____________________________________________________________________________
+
+#include <iostream>
+using namespace std;
+
+int main()
+{   int a,b,c;
+    cin>>a;
+    cin>>b;
+    cin>>c;
+    cout<<a*b*c;   }
+____________________________________________________________________________
+
+#include <iostream>
+using namespace std;
+
+int main()
+{   int a,b;
+    cin>>a;
+    cin>>b;
+    cout<<(a+b)*0.4; }
+____________________________________________________________________________
+#include <iostream>
+using namespace std;
+
+int main()
+{   int a;
+    cout<<"podaj cene brutto" <<endl;
+    cin>>a;
+    cout<<"cena netto to: ";
+    cout<<a/1.23; }
+____________________________________________________________________________
+#include <iostream>
+using namespace std;
+
+int main()
+{   int a,b;
+    cin>> a;
+    cin>> b;
+    cout<< a%b;
+}
