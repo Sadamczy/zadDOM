@@ -1,0 +1,64 @@
+zad 3
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int a;
+   cout<<"podaj swoj wiek "<<endl;
+    cin>> a;
+    if(a<=17) cout<<"jestes dzieciak";
+        else cout<<"jestes pelnoletni";
+
+
+    return 0;
+}
+
+
+
+zad 4
+
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    int waga, limit = 21;
+   cout<<"podaj wage ciezarowy "<<endl;
+    cin>> waga;
+    if(waga>=limit) cout<<"ty i twoja ciezarowa jestescie za ciezcy";
+        else cout<<"ty i twoja ciezarowa nie jestescie za ciezcy";
+return 0;
+}
+
+
+
+
+zad5
+
+
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    int a,b,c;
+   cout<<"podaj liczby "<<endl;
+    cout<< "podaj a "<<endl;
+    cin>> a;
+    cout<< "podaj b "<<endl;
+    cin>> b;
+    cout<< "podaj c "<<endl;
+    cin>> c;
+        if(c<b){ if(a<c) cout<<"liczba trzecia znajduje sie pomiedzy dwoma pierwszymi";}
+            else{ if(c<a && b<c) cout<<"liczba trzecia znajduje sie pomiedzy dwoma pierwszymi";
+                            else cout<<"NIE";}
+
+
+return 0;
+}
+
+
+
+
+
