@@ -1,0 +1,16 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    int a,p;
+
+    cout<< "podaj a";
+    cin>>a;
+    cout<<"podaj p";
+    cin>>p;
+    if(((int)(pow(a,p))-a) %p== 0) cout<< "sa podzielne ";
+    else cout<< "nie sa";
+    return 0;
+}
