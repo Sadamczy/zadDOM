@@ -1,0 +1,68 @@
+a)
+#include <iostream>
+
+using namespace std;
+
+int main()
+{   cout << "Podaj n: ";
+        int n;
+    cin >> n;
+        for (int a=3, b=0 ; b<n ; a=a*2 , b++) {
+    cout << a << ' ';}
+return 0;
+}
+
+
+
+b)
+#include <iostream>
+
+using namespace std;
+
+int main()
+{   cout << "Podaj n: ";
+        int n;
+    cin >> n;
+        for (int a=-3, b=0 ; b<n ; a=-a*2 , b++) {
+    cout << a << ' ';}
+return 0;
+}
+
+
+
+
+c)
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{   cout << "Podaj n: ";
+       unsigned int n,b=0 ;
+    cin >> n;
+        for (int a=- 10; b<n ; a=a+6 , b++) {
+    cout << a << ' ';}
+return 0;
+}
+
+
+
+
+d)
+#include <iostream>
+
+using namespace std;
+
+int main()
+{   cout << "Podaj n: ";
+       unsigned int n,b=0 ;
+    cin >> n;
+        for (int a=1; b<n ; a=a*-2 , b++) {
+    cout << a << ' ';}
+return 0;
+}
+
+
+
+
