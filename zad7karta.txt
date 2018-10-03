@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int p,k,s,a,b;
+    cout<< "podaj punkt startu ";
+    cin>>p;
+    cout<< "podaj punkt koncowy ";
+    cin>>k;
+    cout<< "podaj dlugosc jednego skoku ";
+    cin>> s;
+    a=k-p;
+    b=a/3;
+    s=s+1;
+    if(b>=s) cout<<"nie";
+        else cout<<"tak";
+
+
+
+
+
+
+    return 0;
+}
