@@ -1,0 +1,77 @@
+zad 1-4
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main(){
+    cout<<"Zadanie 1"<<endl;
+    for(int a=0; a<=10 ;  a++ ){
+        cout<< (a*a*a)+3 << ' ';
+    }
+    cout<<"\n\nZadanie 2"<<endl;
+    for(int a=100;a<=999;a++){
+        if(a%15==0)cout<<a<< ' ';
+    }
+
+    cout<<"\nZadanie 3"<<endl;
+    int n,p; cout<<"Podaj n ="; cin>>n;
+    cout<<"Dzielniki liczby "<< n<<" to: ";
+    for(p=1;p<=n;p++){
+        if(n%p==0){
+            cout<<p;
+            if(n!=p)cout<<", ";
+        }
+    }
+    cout<<"\nZadanie 4"<<endl;
+    int s=0; for(int i=10;i<100;i++) s+=i; cout<<s;
+
+
+
+    return 0;
+______________________________________________________________________________________________________________________________________________________________________
+zadanie 5
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int N,x=0,wszystkie=0,wybrane=0;
+    cout<<"\n\nZadanie 5"<<endl;
+    cout<<"podaj liczbe n= ";
+    cin>>N;
+    for(int i=1;i<=N;i++){
+    // cout<<i<< " ";
+    wszystkie+=i;
+    }
+    //cout<< wszystkie;
+    for(int i=1;i<=N-1;i++){
+        cout<<"Podaj x"<< i <<": ";
+        cin>>x;
+        wybrane=wybrane+x;
+    }
+    //cout<<wybrane;
+    cout<<"Wybrana liczba Bajtusia to: " <<wszystkie-wybrane;
+    return 0;}
+______________________________________________________________________________________________________________________________________________________________________
+zadanie 6
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int k=0, j=1;
+   cout<<"ciag Fibonacciego to: ";
+   for(int i=0; i<9; i++ ){
+    	if(i==0) cout<<k<<" ";
+    	if(i==1) cout<<j<<" ";
+    	else{
+       	   j+=k;
+           k=j-k;
+    	      cout<<j<<" ";
+    	}
+   }
+return 0;}
