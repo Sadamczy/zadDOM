@@ -1,0 +1,161 @@
+#include <iostream>
+#include <cmath>
+#include <windows.h>
+using namespace std;
+int SumaKwad(int a, int b);
+int KwadratSum(int a, int b);
+bool wiek(int c);
+double Netto(double d);
+int ResztaDziel(int e, int f);
+
+bool dzielnik(int n,int D);
+int sumaCyfr(int a);
+
+
+int main()
+{
+int X;
+while(X!=0)
+{
+    cout<<"wybierz zadanie (1-4) ";
+    cin>>X;
+    switch(X)
+    {
+
+
+        case 1:  cout<< "wybrales zad1!"<<endl;
+
+            int Y;
+            while(Y!=0)
+            {
+                cout<<"wybierz podpunkt (1-5) ";
+                cin>>Y;
+                switch(Y)
+                {
+
+                        int a,b;
+
+                    case 1:
+                        cout<< "podam ci sume kwadratow! "<<endl;
+                        cout<< "podaj a: ";
+                        cin>>a;
+                        cout<<"podaj b: ";
+                        cin>>b;
+                        cout<< "suma kwadratow to: ";
+                        cout<< SumaKwad(a,b)<<endl<<endl;
+                    break;
+                    case 2:
+                        cout<< "podam ci kwadrat sumy! "<<endl;
+                        cout<< "podaj a: ";
+                        cin>>a;
+                        cout<<"podaj b: ";
+                        cin>>b;
+                        cout<< "kwadrat sumy to: ";
+                        cout<< KwadratSum(a,b)<<endl<<endl;
+                    break;
+                    case 3:
+                        int c;
+                        cout<< "czy osoba jest pelnoletnia? "<<endl;
+                        cout<<"wpisz wiek: ";
+                        cin>>c;
+                        if(wiek(c)) cout<<"osoba jest pelnoletnia"<<endl;
+                        else cout<<"osoba jest niepelnoletnia"<<endl;
+                    break;
+                    case 4:
+                        double d;
+                        cout<<"podaj cene brutto: " ;
+                        cin>>d;
+                        cout<<"cena netto to: ";
+                        cout<< Netto(d)<<endl<<endl;
+                    break;
+                    case 5:
+                        int e,f;
+                        cout<<"podam ci reszte z dzielenia: "<<endl;
+                        cout<<"podaj e: ";
+                        cin>>e;
+                        cout<<"podaj f: ";
+                        cin>>f;
+                        cout<< "reszta z dzielenia to: ";
+                        cout<< ResztaDziel(e,f);
+                    break;
+                }
+        break;
+
+
+        case 2: cout<< "zadanie 2"<<endl;
+            int n,D;
+            cout<< "podaj n: ";
+            cin>> n;
+            cout<<"podaj d: ";
+            cin>>D;
+            if(dzielnik(n,D)) cout<< "jest dzielnikiem"<<endl<<endl;
+                else cout<<"nie jest dzielnikiem"<<endl<<endl;
+        break;
+
+
+        case 3: cout<< "zsumuje dla Ciebie cyfry podanej liczby"<<endl<<endl;
+            int x;
+            cout << "Podaj liczbe: "<<endl;
+            cin >> x;
+            cout <<"suma cyfr podanej liczby to: "<< sumaCyfr(x)<<endl;
+
+        default:cout<<"Nie igraj ze mna"<<endl;break;
+
+        case 4: cout<< "przepraszam nie dalem rady ;C"<<endl;
+                Sleep(1200); cout<<"moge je uzupelnic w wiadomosci do Pana?"<<endl;
+                Sleep(1200); cout<<"dzisiaj, bede wdzieczny :D"<<endl<<endl<<endl;
+        break;
+        }
+
+    }
+
+
+}
+    return 0;
+}
+
+
+
+    int SumaKwad(int a, int b)
+    {
+        return a*a+b*b;
+    }
+
+    int KwadratSum(int a, int b)
+    {
+        return (a+b)*(a+b);
+    }
+
+    bool wiek(int c)
+    {
+        if(c>=18) return true;
+            else return false;
+    }
+
+    double Netto(double d)
+    {
+        return d/1.23;
+    }
+
+    int ResztaDziel(int e, int f)
+    {
+        return e%f;
+    }
+
+    bool dzielnik(int n,int D)
+    {
+        if(n%D==0) return true;
+            else return false;
+    }
+
+    int sumaCyfr(int a)
+    {
+        int wynik=0;
+        do
+        {
+            wynik=wynik+a%10;
+            a=a/10;
+        }
+        while(a!=0);
+        return wynik;
+    }
